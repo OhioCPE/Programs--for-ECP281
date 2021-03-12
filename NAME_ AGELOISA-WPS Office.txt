@@ -1,0 +1,63 @@
+﻿NAME: AGELOISA OHIOSUMUAN KENNEDY
+MAT NO:ENG1804709
+DEPARTMENT: COMPUTER ENGINEERING
+LEVEL:200L
+ECP281
+
+
+fprintf ('For equation ax^2 + bx + c '); 
+
+
+a = input ( ' Enter a: ');
+b = input ( ' Enter b: ');
+c = input ( ' Enter c: ');
+
+M = sqrt(b^2 - 4*a*c);
+
+if (b^2 > 4*a*c)
+    x1 = (-b + M)/(2*a);
+    x2 = (-b - M)/(2*a);
+    fprintf( 'The equation has two roots')
+    
+    disp (x1)
+    disp (x2)
+else if ( b^2 == 4*a*c)
+    x1 = (-b)/(2*a);
+    x2 = (-b )/(2*a);
+    fprintf( 'The equation has one roots')
+    
+    disp (x1)
+    disp (x2)
+    else
+    x1 = (-b + M)/(2*a);
+    x2 = (-b - M)/(2*a);
+    fprintf( 'The equation has complex roots')
+    disp (x1)
+    disp (x2)
+    end
+end
+
+fprintf ( 'For equation a1x1 + a2x2 + a3x3 = y1, b1x1 + b2x2 + b3x3 =y2, c1x1 + c2x2 + c3x3 = y3')
+
+a1 = input (' Enter a1: ');
+a2 = input (' Enter a2: ');
+a3 = input (' Enter a3: ');
+
+b1 = input (' Enter b1: ');
+b2 = input (' Enter b2: ');
+b3 = input (' Enter b3: ');
+
+c1 = input (' Enter c1: ');
+c2 = input (' Enter c2: ');
+c3 = input (' Enter c3: ');
+
+y1 = input (' Enter y1: ');
+y2 = input (' Enter y2: ');
+y3 = input (' Enter y3: ');
+
+A = [a1 a2 a3; b1 b2 b3; c1 c2 c3];
+Y = [y1; y2; y3];
+
+X =A\Y;
+
+disp (X)
